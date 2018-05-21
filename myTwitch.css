@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background: rgb(179,171,195);
+}
+
+button {
+	width: 80%;
+	height: 3%;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-left: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	background: #6441A4;
+	font-weight: 600;
+	font-size: 20px;
+	outline: none;
+	border: 1px solid rgba(255, 255, 255, 0.3)
+	line-height: 2.0;
+	padding: 3px;
+}
+
+li {
+	list-style: none;
+	width: 100%;
+	height: 50px;
+	margin: 20px 0 20px 10px;
+}
+
+li:hover {
+	background: rgba(0, 0, 0, 0.1);
+	margin-left: 0px;
+}
+
+li img {
+	position: absolute;
+	left: 200px;
+	height: 50px;
+	width: 50px;
+	padding-right: 15px;
+}
+
+a {
+	background: rgb(204,208,212);
+	color: #232323;
+	text-decoration: none;
+	width: 200px;
+	padding: 25px;
+	border-radius: 5px;
+	font-size: 40px;
+	font-weight: 300;
+	text-align: center;
+}
+
+a:hover {
+	color: #232323;
+	text-decoration: none;
+}
+
+.hidden{
+	display: none;
+}
+.online {
+	border-right: 5px solid green;
+	border-radius: 5px;
+}
+
+.offline {
+	border-right: 5px solid red;
+	border-radius: 5px;
+}
+.selected {
+	background: rgba(0, 0, 0, 0.1);
+	margin-left: 0px;
+}
+
+
+#watch {
+	position: absolute;
+	top: 35%;
+	left: 40%;
+}
+
+
+
+#banner {
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	border-top-right-radius: 10px;
+
+}
+
+#myTwitch {
+	background: url("https://res.cloudinary.com/dt4qeehms/image/upload/v1482192766/MyTwitchList/my-logo2.png") no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 10%;
+	left: 150px;
+	width: 600px;
+	height: 400px;
+	
+}
+
+
+#streamStatus{
+	background: rgb(204,208,212);
+	position: absolute;
+	top: 60%;
+	left: 40%;
+	width: 200px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 100;
+	border-radius: 5px;
+	padding: 3px 20px;
+
+}
+
+#preview {
+	position: relative;
+	top: 30%;
+	width: 100%;
+	height: 420px;
+	border-bottom-right-radius: 10px;
+	
+}
+
+#container {
+	width: 1200px;
+	height: 600px;
+	background: rgb(204,208,212);
+	margin: 10% auto;
+	border-radius: 10px;
+	box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+
+}
+
+#left-container {
+	font-family: Karla;
+	position: absolute;
+	border: 1px solid gray;
+	border-top-left-radius: 10px;
+	width: 300px;
+	height: inherit;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+#buttons {
+	background: #232323;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-top-left-radius: 10px;
+}
+
+#scroll {
+	
+	position: absolute;
+	width: 300px;
+	height: 445px;
+	overflow: scroll;
+}
+
+#right-container {
+	position: relative;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 900px;
+	left: 300px;
+	height: 100%;
+
+}
+
+
+
+@media (max-width: 1200px){
+
+button {
+	margin-left: 50px;
+	height: 5%;
+}
+
+li {
+	height: 70px;
+	margin: 20px 0 50px 10px;
+}
+
+
+li img {
+	position: absolute;
+	left: 350px;
+	height: 70px;
+	width: 70px;
+	
+}
+
+
+#myTwitch {
+	top: 100px;
+	left: 100px;
+	width: 300px;
+	height: 300px;
+}
+
+
+#streamStatus{
+	top: 70%;
+	left: 30%;
+}
+
+#preview {
+	height: 301px;
+	border-bottom-right-radius: 0px;
+}
+
+
+
+#watch {
+	position: absolute;
+	top: 35%;
+	left: 30%;
+}
+
+#container{
+margin: 30px auto;
+width: 500px;
+height: 800px;
+border-bottom-left-radius: 0px;
+}
+
+#left-container{
+width: 500px;
+height: 400px;
+font-size: 24px;
+top: 450px;
+border: none;
+}
+
+#right-container {
+width: 500px;
+height: 400px;
+top: 0;
+left: 0;
+border: none;
+border-radius: 0px;
+
+}
+
+#buttons {
+	border: none;
+	border-top: 1px solid gray;
+	border-top-left-radius: 0px;
+}
+
+#scroll {
+	border: none;
+	top: 155px;
+	left: 0;
+	position: absolute;
+	width: 500px;
+	height: 240px;
+	overflow: scroll;
+}
+
+
+}
